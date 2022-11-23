@@ -80,8 +80,15 @@
           <h1 class="font1">
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
-          </h1>
-          <button class="button-style" type="button">Zamów usługe</button>
+          </h1> 
+          <button class="button-style" type="button" data-modal-open>
+            Zamów usługe
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-btn" data-modal-close><span>X</span></button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section">
@@ -438,33 +445,31 @@
           </address>
         </div>
         <div class="work">
-          <h3 class="font3a">
-            DOŁĄCZ DO NAS
-          </h3>
+          <h3 class="font3a">DOŁĄCZ DO NAS</h3>
           <ul class="icon-position2a">
             <li class="list">
-              <a class=" icon-background1" href="#">
+              <a class="icon-background1" href="#">
                 <svg class="social-media-icons1">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="list">
-              <a class=" icon-background1" href="#">
+              <a class="icon-background1" href="#">
                 <svg class="social-media-icons1">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="list">
-              <a class=" icon-background1" href="#">
+              <a class="icon-background1" href="#">
                 <svg class="social-media-icons1">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="list">
-              <a class=" icon-background1" href="#">
+              <a class="icon-background1" href="#">
                 <svg class="social-media-icons1">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -474,5 +479,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
