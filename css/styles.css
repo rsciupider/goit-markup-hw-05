@@ -110,6 +110,13 @@ body {
   color: var(--grey1-clr);
 }
 
+.font13 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--white-clr);
+}
+
 .links {
   text-decoration: none;
 }
@@ -118,12 +125,72 @@ body {
   text-decoration: none;
 }
 
+.cards-animation {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 294px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 49px 45px 49px 24px;
+}
+
+.li-item:hover .cards-animation {
+  transition: transform;
+  transition-duration: 0.25s;
+  transform: translateY(-100%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cards-position {
+  position: relative;
+}
+
+.card-overflow {
+  overflow:hidden;
+}
+
 .links:hover {
+  transition:color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--blue-clr);
 }
 
 .links:focus {
   color: var(--blue-clr);
+}
+
+.menu-links-agency {
+  position: relative;
+  color: var(--blue-clr);
+}
+
+.menu-links-agency:after {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-clr);
+}
+
+.menu-links-portfolio {
+  position: relative;
+  color: var(--blue-clr);
+}
+
+.menu-links-portfolio:after {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue-clr);
 }
 
 .button-style {
@@ -174,6 +241,9 @@ body {
   line-height: 1.62;
   text-align: center;
   color: var(--white-clr);
+  transition: color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button1-style:focus {
@@ -357,8 +427,9 @@ img {
   box-shadow: -3px 3px 5px -3px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  scale: 1.05;
-  transition: 0.5s;
+    transition: box-shadow;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope-icon {
@@ -381,18 +452,30 @@ img {
 }
 
 .links:hover .envelope-icon {
+  transition: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
 .links:hover .smartphone-icon {
+  transition: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
 .links:focus .envelope-icon {
+  transition: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
 .links:focus .smartphone-icon {
+  transition: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
@@ -494,18 +577,30 @@ img {
 }
 
 .our-clients-border:hover {
+  transition: border;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--blue-clr);
 }
 
 .our-clients-border:hover .clients-icons {
+  transition: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
 .our-clients-border:focus {
+  transition: border;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--blue-clr);
 }
 
 .our-clients-border:focus .clients-icons {
+  transition: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
@@ -578,4 +673,39 @@ img {
 
 .is-hidden {
   transform: translateX(-100%);
+}
+
+.image-background {
+  width: 370px;
+  height: 70px;
+  background-color: rgba(0 0 0 / 0.5);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-position {
+  position: relative;
+}
+
+.image-background p {
+  color: var(--white-clr);
+  font-weight: 700;
+}
+
+/********************/
+
+.box-3 {
+  width: 370px;
+  height: 294px;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  width:100%;
+  height:100%;
+  position:absolute
 }
