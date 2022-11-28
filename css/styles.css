@@ -541,6 +541,9 @@ img {
 }
 
 .icon-background:hover {
+  transition-property: background-color, fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   background-color: var(--blue-clr);
   fill: var(--white-clr);
