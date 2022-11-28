@@ -119,6 +119,9 @@ body {
 
 .links {
   text-decoration: none;
+  transition: color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links1 {
@@ -135,13 +138,13 @@ body {
   align-items: center;
   justify-content: center;
   padding: 49px 45px 49px 24px;
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .li-item:hover .cards-animation {
-  transition: transform;
-  transition-duration: 0.25s;
   transform: translateY(-100%);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards-position {
@@ -149,13 +152,10 @@ body {
 }
 
 .card-overflow {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .links:hover {
-  transition:color;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--blue-clr);
 }
 
@@ -226,6 +226,9 @@ body {
   border: 0;
   cursor: pointer;
   padding: 6px 22px;
+  transition-property: color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button1-style:hover {
@@ -241,9 +244,6 @@ body {
   line-height: 1.62;
   text-align: center;
   color: var(--white-clr);
-  transition: color;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button1-style:focus {
@@ -421,15 +421,15 @@ img {
 
 .li-item {
   flex-basis: calc((100% - 60px) / 3);
+  transition-property: box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .li-item:hover {
   box-shadow: -3px 3px 5px -3px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow;
-    transition-duration: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope-icon {
@@ -437,6 +437,9 @@ img {
   height: 12px;
   margin-right: 10px;
   fill: var(--grey1-clr);
+  transition-property: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smartphone-icon {
@@ -444,6 +447,9 @@ img {
   height: 16px;
   margin-right: 10px;
   fill: var(--grey1-clr);
+  transition-property: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-attributes-icons {
@@ -452,30 +458,18 @@ img {
 }
 
 .links:hover .envelope-icon {
-  transition: fill;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
 .links:hover .smartphone-icon {
-  transition: fill;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
 .links:focus .envelope-icon {
-  transition: fill;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
 .links:focus .smartphone-icon {
-  transition: fill;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
@@ -524,6 +518,9 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
+  transition-property: background-color, fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-background1 {
@@ -541,9 +538,6 @@ img {
 }
 
 .icon-background:hover {
-  transition-property: background-color, fill;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   background-color: var(--blue-clr);
   fill: var(--white-clr);
@@ -567,6 +561,9 @@ img {
   width: 106px;
   height: 60px;
   fill: var(--socials);
+  transition-property: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-border {
@@ -577,33 +574,24 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: border;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-border:hover {
-  transition: border;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--blue-clr);
 }
 
 .our-clients-border:hover .clients-icons {
-  transition: fill;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
 .our-clients-border:focus {
-  transition: border;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--blue-clr);
 }
 
 .our-clients-border:focus .clients-icons {
-  transition: fill;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blue-clr);
 }
 
@@ -708,7 +696,7 @@ img {
 }
 
 .overlay {
-  width:100%;
-  height:100%;
-  position:absolute
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
